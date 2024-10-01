@@ -6,7 +6,7 @@
 
 ## Reaction Models and Expressions
 
-Kinetopy calculates the kinetics for a variety of solid-state reaction models, each with its own differential and integral forms. The table below lists the models included in the tool along with their rate expressions.
+Kinetopy calculates the kinetics for various solid-state reaction models, based on the integral forms. The table below lists the models included in both differential and integral forms.
 
 ### TABLE 1: Solid-State Rate and Integral Expressions for Different Reaction Models
 
