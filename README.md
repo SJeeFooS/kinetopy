@@ -2,7 +2,7 @@
 
 **Kinetopy** is a Python tool designed to calculate solid-state kinetics from experimental data and generate corresponding plots. This tool provides an approach for analyzing and visualizing kinetic data using various kinetic models.
 
-**The kinetic models are based on the paper "Solid-State Kinetic Models: Basics and Mathematical Fundamentals" by Ammar Khawam and Douglas R. Flanagan **
+**The kinetic models are based on the paper "Solid-State Kinetic Models: Basics and Mathematical Fundamentals" by Ammar Khawam and Douglas R. Flanagan**
 
 ## Reaction Models and Expressions
 
