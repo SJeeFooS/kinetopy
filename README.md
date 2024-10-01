@@ -104,3 +104,7 @@ t    R
 #Author
 Sherif Ashraf Ahmed Hefney
 Email: Sherif1.se@gmail.com
+=======
+# kinetopy
+a Python tool designed to calculate solid-state kinetics from experimental data and generate corresponding plots.
+>>>>>>> bc636f6ef009639c3be262bcec8cb2de9ea2f0a1
