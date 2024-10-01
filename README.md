@@ -96,12 +96,15 @@ the first row, second column must be written as R.
 
 An example input file might look like this:
 
-t    R
-0    0.1
-5    0.3
-10   0.5
-15   0.7
-20   0.9
+
+| **t** | **R** |
+|-------|-------|
+| 0     | 0.1   |
+| 5     | 0.3   |
+| 10    | 0.5   |
+| 15    | 0.7   |
+| 20    | 0.9   |
+
 
 #Author
 
