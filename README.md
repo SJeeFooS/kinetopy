@@ -10,28 +10,30 @@ Kinetopy calculates the kinetics for a variety of solid-state reaction models, e
 
 ### TABLE 1: Solid-State Rate and Integral Expressions for Different Reaction Models
 
-| **Model**                         | **Differential Form (f(R))**                | **Integral Form (g(R))**                     |
-|------------------------------------|---------------------------------------------|----------------------------------------------|
-| **Nucleation Models**              |                                             |                                              |
-| Power Law (P2)                     | \( 2R^{1/2} \)                              | \( R^{1/2} \)                                |
-| Power Law (P3)                     | \( 3R^{2/3} \)                              | \( R^{1/3} \)                                |
-| Power Law (P4)                     | \( 4R^{3/4} \)                              | \( R^{1/4} \)                                |
-| Avrami-Erofeyev (A2)               | \( 2(1 - R)[-\ln(1 - R)]^{1/2} \)           | \( [-\ln(1 - R)]^{1/2} \)                    |
-| Avrami-Erofeyev (A3)               | \( 3(1 - R)[-\ln(1 - R)]^{2/3} \)           | \( [-\ln(1 - R)]^{1/3} \)                    |
-| Avrami-Erofeyev (A4)               | \( 4(1 - R)[-\ln(1 - R)]^{3/4} \)           | \( [-\ln(1 - R)]^{1/4} \)                    |
-| **Geometrical Contraction Models** |                                             |                                              |
-| Contracting Area (R2)              | \( 2(1 - R)^{1/2} \)                        | \( 1 - (1 - R)^{1/2} \)                      |
-| Contracting Volume (R3)            | \( 3(1 - R)^{2/3} \)                        | \( 1 - (1 - R)^{1/3} \)                      |
-| **Diffusion Models**               |                                             |                                              |
-| 1-D Diffusion (D1)                 | \( \frac{1}{2R} \)                          | \( R^2 \)                                    |
-| 2-D Diffusion (D2)                 | \( -\frac{1}{\ln(1 - R)} \)                 | \( (1 - R)\ln(1 - R) + R \)                  |
-| 3-D Diffusion-Jander (D3)          | \( \frac{3(1 - R)^{2/3}}{2(1 - (1 - R)^{1/3})} \) | \( (1 - (1 - R)^{1/3})^2 \)              |
-| Ginstling-Brounshtein (D4)         | \( \frac{3}{2((1 - R)^{-1/3} - 1)} \)       | \( 1 - \frac{2}{3}R - (1 - R)^{2/3} \)       |
-| **Reaction-Order Models**          |                                             |                                              |
-| Zero-Order (F0/R1)                 | \( 1 \)                                     | \( R \)                                      |
-| First-Order (F1)                   | \( 1 - R \)                                 | \( -\ln(1 - R) \)                            |
-| Second-Order (F2)                  | \( (1 - R)^2 \)                             | \( \frac{1}{1 - R} - 1 \)                    |
-| Third-Order (F3)                   | \( (1 - R)^3 \)                             | \( \frac{1}{2}[(1 - R)^{-2} - 1] \)          |
+
+| **Model**                         | **Differential Form (f(R))**                        | **Integral Form (g(R))**                             |
+|-----------------------------------|-----------------------------------------------------|------------------------------------------------------|
+| **Nucleation Models**             |                                                     |                                                      |
+| Power Law (P2)                    | $2R^{1/2}$                                          | $R^{1/2}$                                            |
+| Power Law (P3)                    | $3R^{2/3}$                                          | $R^{1/3}$                                            |
+| Power Law (P4)                    | $4R^{3/4}$                                          | $R^{1/4}$                                            |
+| Avrami-Erofeyev (A2)              | $2(1 - R)[-\ln(1 - R)]^{1/2}$                       | $[-\ln(1 - R)]^{1/2}$                                |
+| Avrami-Erofeyev (A3)              | $3(1 - R)[-\ln(1 - R)]^{2/3}$                       | $[-\ln(1 - R)]^{1/3}$                                |
+| Avrami-Erofeyev (A4)              | $4(1 - R)[-\ln(1 - R)]^{3/4}$                       | $[-\ln(1 - R)]^{1/4}$                                |
+| **Geometrical Contraction Models**|                                                     |                                                      |
+| Contracting Area (R2)             | $2(1 - R)^{1/2}$                                    | $1 - (1 - R)^{1/2}$                                  |
+| Contracting Volume (R3)           | $3(1 - R)^{2/3}$                                    | $1 - (1 - R)^{1/3}$                                  |
+| **Diffusion Models**              |                                                     |                                                      |
+| 1-D Diffusion (D1)                | $\frac{1}{2R}$                                      | $R^2$                                                |
+| 2-D Diffusion (D2)                | $-\frac{1}{\ln(1 - R)}$                             | $(1 - R)\ln(1 - R) + R$                              |
+| 3-D Diffusion-Jander (D3)         | $\frac{3(1 - R)^{2/3}}{2(1 - (1 - R)^{1/3})}$     | $(1 - (1 - R)^{1/3})^2$                              |
+| Ginstling-Brounshtein (D4)        | $\frac{3}{2((1 - R)^{-1/3} - 1)}$                  | $1 - \frac{2}{3}R - (1 - R)^{2/3}$                  |
+| **Reaction-Order Models**         |                                                     |                                                      |
+| Zero-Order (F0/R1)                | $1$                                                 | $R$                                                  |
+| First-Order (F1)                  | $1 - R$                                            | $-\ln(1 - R)$                                        |
+| Second-Order (F2)                 | $(1 - R)^2$                                        | $\frac{1}{1 - R} - 1$                                |
+| Third-Order (F3)                  | $(1 - R)^3$                                        | $\frac{1}{2}[(1 - R)^{-2} - 1]$                      |
+
 
 ---
 
@@ -104,7 +106,10 @@ t    R
 #Author
 
 Sherif Ashraf Ahmed Hefney
-Email: Sherif1.se@gmail.com
+
+Email: 
+
+Sherif1.se@gmail.com
 =======
 # kinetopy
 
