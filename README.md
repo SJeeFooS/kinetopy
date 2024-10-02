@@ -80,8 +80,9 @@ python setup.py install
 write this in terminal
 
 ```bash
-kinetopy.py input_file_example.xlsx output_file_example
+python kinetopy.py input_file_example.xlsx output_file_example
 ```
+if did not work, change "python" to "python3".
 
 replace input_file_example.xlsx by the name of your file (must be existed in the same folder)
 
